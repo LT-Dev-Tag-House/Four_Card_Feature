@@ -40,8 +40,8 @@ Your users should:
 
 ### Links
 
-- Solution URL: []()
-- Live Site URL: []()
+- Solution URL: [https://www.frontendmentor.io/solutions/four-card-feature-grid-and-flexbox-4iYIcau3Z](https://www.frontendmentor.io/solutions/four-card-feature-grid-and-flexbox-4iYIcau3Z)
+- Live Site URL: [https://lt-dev-tag-house.github.io/Four_Card_Feature/](https://lt-dev-tag-house.github.io/Four_Card_Feature/)
 
 ## My process
 
