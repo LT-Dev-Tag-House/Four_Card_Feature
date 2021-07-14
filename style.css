@@ -1,0 +1,155 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    background-color: hsl(0, 0%, 98%);
+}
+
+.container {
+    min-width: 297px;
+    max-width: 297px;
+    margin: 0 auto;
+}
+
+.header-text {
+    text-align: center;
+}
+
+.main-heading {
+    font-size: 23px;
+    font-weight: 200;
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+    color: hsl(234, 12%, 34%);
+}
+
+.sub-heading {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 0rem;
+    color: hsl(234, 12%, 34%);
+}
+
+.header-text p {
+    font-weight: 400;
+    font-size: 15px;
+    color: hsl(229, 6%, 66%);
+}
+
+.cards {
+    margin-top: 3rem;
+}
+
+.card-col {
+    border-radius: 5px;
+    border: 2px solid hsl(0, 0%, 98%);
+    box-shadow: 1px 10px .6em hsl(229, 6%, 66%);
+}
+
+.card--one {
+    border-top: 5px solid hsl(180, 62%, 55%);
+}
+
+.card--two {
+    border-top: 5px solid hsl(0, 78%, 62%);
+}
+
+.card--three {
+    border-top: 5px solid hsl(34, 97%, 64%);
+}
+
+.card--four {
+    border-top: 5px solid hsl(212, 86%, 64%);   
+}
+
+
+.card-body {
+    padding: .55rem;
+}
+
+.card-title {
+    font-weight: 600;
+    color: hsl(234, 12%, 34%);
+}
+.card-text {
+    color: hsl(229, 6%, 66%);
+    font-size: 14px;
+}
+
+.card-img {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.card-col + .card-col {
+    margin-top: 1rem;
+}
+
+@media (min-width: 670px) {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, .2fr);
+        grid-template-rows: repeat(2, 1fr);
+        justify-content:center;
+        gap: 20px;
+    }
+
+    .card-col + .card-col {
+        margin-top: 0rem;
+    }
+}
+
+
+@media (min-width: 1366px) {
+    header .container {
+        margin-top: 1rem;
+        max-width: 32vw;
+        margin-bottom: 10rem;
+    }
+
+
+    .main-heading {
+        font-size: 30px;
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+    }
+    
+    .sub-heading {
+        font-size: 30px;
+        font-weight: 600;
+        margin-top: 0rem;
+        color: hsl(234, 12%, 34%);
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, .1fr);
+        grid-template-rows: repeat(2, 1fr);
+        justify-content:center;
+        max-height: 50vh;
+    }
+
+    .card--two {
+        position: relative;
+        top: -120px;
+    }
+
+    .card--three {
+        order: 4;
+        grid-column-start: 2;
+        position: relative;
+        top: -100px;
+    }
+
+    .card--four {
+        order: 3;
+    }
+
+    .card-col + .card-col {
+        margin-top: 0rem;
+    }
+}
